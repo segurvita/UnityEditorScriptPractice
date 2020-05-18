@@ -8,6 +8,8 @@ public class HogeLoader : MonoBehaviour
     {
         m_hoge = ScriptableObject.Instantiate(Resources.Load<Hoge>("Hoge"));
 
+#if HOGE
         Debug.Log(m_hoge.IntValue);
+#endif
     }
 }
